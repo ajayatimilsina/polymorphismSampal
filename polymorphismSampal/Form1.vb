@@ -1,25 +1,22 @@
 ﻿Public Class Form1
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBoxDog.Click, PictureBoxCat.Click, PictureBoxBird.Click
-
-    End Sub
+    ' animalCookies लाई यहाँ Declare गर्नुपर्छ
+    Dim animalCookies As Animal
 
     Private Sub ButtonSing_Click(sender As Object, e As EventArgs) Handles ButtonSing.Click
-        animalCookis = New Dog（）
-        PictureBoxDog.Image = animalCookis.Sing()
-        animalCookis = New Cat（）
-        PictureBoxCat.Image = animalCookis.Sing()
-        animalCookis = New Bird（）
-        PictureBoxBird.Image = animalCookis.Sing()
-
+        animalCookies = New Dog() ' () लाई अंग्रेजी बनाउने
+        PictureBoxDog.Image = animalCookies.Sing()
+        animalCookies = New Cat()
+        PictureBoxCat.Image = animalCookies.Sing()
+        animalCookies = New Bird()
+        PictureBoxBird.Image = animalCookies.Sing()
     End Sub
 
     Private Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
-        animalCookis = New Dog（）
-        PictureBoxDog.Image = animalCookis.Reset()
-        animalCookis = New Cat（）
-        PictureBoxCat.Image = animalCookis.Reset()
-        animalCookis = New Bird（）
-        PictureBoxBird.Image = animalCookis.Reset()
-
+        animalCookies = New Dog()
+        PictureBoxDog.Image = animalCookies.Reset()
+        animalCookies = New Cat()
+        PictureBoxCat.Image = animalCookies.Reset()
+        animalCookies = New Bird()
+        PictureBoxBird.Image = animalCookies.Reset()
     End Sub
 End Class
